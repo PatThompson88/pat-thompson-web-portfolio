@@ -12,12 +12,10 @@ import {
   MDBNavbarLink,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
+import { IsCurrentPageName } from '/utilities/common'
 
 export default function Header() {
   const [showBasic, setShowBasic] = useState(false);
-  const IsCurrentPageName = (pageName) => {
-    return (useRouter().asPath === `/${pageName}`);
-  }
 
   return (
     <div className="">
@@ -67,30 +65,6 @@ export default function Header() {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-
-      <div
-        className='p-5 text-center bg-image'
-        style={{ backgroundImage: "url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp')", height: 600 }}
-      >
-        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='col'>
-              <div className='text-primary'>
-                <h1 className='mb-3'>Patrick Thompson</h1>
-                <h4 className='mb-3'>Websites, Mobile Apps, and Games</h4>
-                <h6 className='mb-3'>5+ Years Professional Experience</h6>
-                <a className='btn btn-outline-info btn-lg' href='/resume' role='button'>
-                  Interactive Resumé
-                </a>
-              </div>
-            </div>
-            <div className='col'>
-              <img src='https://images.app.goo.gl/xvLEDvmFMUG3HPCv8'></img>
-            </div>
-
-          </div>
-        </div>
-      </div>
 
     </div>
   );
