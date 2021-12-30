@@ -44,19 +44,19 @@ export default function Header() {
             <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 text-secondary'>
               
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current={IsCurrentPageName("resume")} href='resume'>
+                <MDBNavbarLink active aria-current={IsCurrentPageName("resume").toString()} href='resume'>
                   Interactive Resumé
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current={IsCurrentPageName("projects")} href='projects'>
+                <MDBNavbarLink active aria-current={IsCurrentPageName("projects").toString()} href='projects'>
                   Projects
                 </MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current={IsCurrentPageName("writing")} href='writing'>
+                <MDBNavbarLink active aria-current={IsCurrentPageName("writing").toString()} href='writing'>
                   Writing
                 </MDBNavbarLink>
               </MDBNavbarItem>
