@@ -26,7 +26,6 @@ export const getMDBNavbarItem = (pageName, linkText) => {
 
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
-  console.log(IsCurrentPageName("resume").toString());
   return (
     <>
       <Head>
@@ -49,22 +48,10 @@ export default function Header() {
           </MDBNavbarToggler>
           <MDBCollapse navbar show={showNav}>
             <MDBNavbarNav>
-              {getMDBNavbarItem("metaverse", "MetaVerse")}
-              <MDBNavbarItem>
-                <MDBNavbarLink aria-current={IsCurrentPageName("projects").toString()} href='/projects'>
-                  Projects
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink aria-current={IsCurrentPageName("writing").toString()} href='/writing'>
-                  Writing
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink aria-current={IsCurrentPageName("employers").toString()} href='/employers'>
-                  Employers
-                </MDBNavbarLink>
-              </MDBNavbarItem>
+              {getMDBNavbarItem("metaverse", "Metaverse")}
+              {getMDBNavbarItem("projects", "Projects")}
+              {getMDBNavbarItem("articles", "Articles")}
+              {getMDBNavbarItem("employers", "Employers")}
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
