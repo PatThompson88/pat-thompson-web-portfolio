@@ -13,8 +13,20 @@ import {
 } from 'mdb-react-ui-kit';
 import { IsCurrentPageName } from '/utilities/common';
 
+export const getMDBNavbarItem = (pageName, linkText) => {
+  let navLink = IsCurrentPageName(pageName) ?
+    <MDBNavbarLink active href={`/${pageName}`}>{linkText}</MDBNavbarLink> :
+    <MDBNavbarLink href={`/${pageName}`}>{linkText}</MDBNavbarLink>;
+  return (
+    <MDBNavbarItem>
+        {navLink}
+    </MDBNavbarItem>
+  );
+}
+
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
+  console.log(IsCurrentPageName("resume").toString());
   return (
     <>
       <Head>
@@ -37,11 +49,7 @@ export default function Header() {
           </MDBNavbarToggler>
           <MDBCollapse navbar show={showNav}>
             <MDBNavbarNav>
-              <MDBNavbarItem>
-                <MDBNavbarLink aria-current={IsCurrentPageName("resume").toString()} href='/resume'>
-                  Interactive Resumé
-                </MDBNavbarLink>
-              </MDBNavbarItem>
+              {getMDBNavbarItem("metaverse", "MetaVerse")}
               <MDBNavbarItem>
                 <MDBNavbarLink aria-current={IsCurrentPageName("projects").toString()} href='/projects'>
                   Projects
@@ -61,41 +69,6 @@ export default function Header() {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-    </>
-  );
-}
-
-function AltHeader(){
-  return (
-    <>
-    <MDBNavbarToggler
-      type='button'
-      aria-expanded='false'
-      aria-label='Toggle navigation'
-      onClick={() => setShowNav(!showNav)}
-    >
-      <MDBIcon icon='bars' fas />
-    </MDBNavbarToggler>
-    <MDBCollapse navbar show={showNav}>
-      <MDBNavbarNav>
-        <MDBNavbarItem>
-          <MDBNavbarLink active aria-current='page' href='#'>
-            Home
-          </MDBNavbarLink>
-        </MDBNavbarItem>
-        <MDBNavbarItem>
-          <MDBNavbarLink href='#'>Features</MDBNavbarLink>
-        </MDBNavbarItem>
-        <MDBNavbarItem>
-          <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
-        </MDBNavbarItem>
-        <MDBNavbarItem>
-          <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
-            Disabled
-          </MDBNavbarLink>
-        </MDBNavbarItem>
-      </MDBNavbarNav>
-    </MDBCollapse>
     </>
   );
 }
