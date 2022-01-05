@@ -5,7 +5,7 @@ $success: #3ef156;
 $warning: #def848;
 $info: #6afdd8;
 
-$body-bg: #e7e7ca;
+$body-bg: #ffffff;
 
 // Minimun Screen Size
 @media only screen and (max-width: 576px){}
@@ -29,6 +29,11 @@ $body-bg: #e7e7ca;
 .bg-light-tint{
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: overlay;
+}
+
+.bubble-box{
+  border: 1px solid $primary;
+  border-radius: 10%/40%;
 }
 
 @import "bootstrap";

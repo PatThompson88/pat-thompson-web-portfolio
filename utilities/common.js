@@ -5,6 +5,5 @@ export const IsCurrentPageName = (pageName) => {
 }
 
 export const getBaseUrl = () => {
-  console.log(useRouter().basePath);
   return useRouter().basePath;
 }

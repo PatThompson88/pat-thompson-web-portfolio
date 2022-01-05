@@ -24,8 +24,9 @@ export default function MetaverseHeading() {
           <h4 className='mb-3'>Showcases Career & Experience</h4>
           <ul className='text-start'>
             <li>Made with Unity3D</li>
-            <li>Online Community Support</li>
-            <li>Interactive Environment</li>
+            <li>Interact with other members</li>
+            <li>Interactive with the environment</li>
+            <li>Explore the metaverse and it's contents</li>
           </ul>
           <Link href='/metaverse'>
             <MDBBtn color='success'>Metaverse</MDBBtn>
