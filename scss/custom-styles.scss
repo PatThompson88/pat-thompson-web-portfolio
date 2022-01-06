@@ -26,14 +26,23 @@ $body-bg: #ffffff;
 @media only screen and (min-width: 1400px){}
 
 // all screen sizes
-.bg-light-tint{
-  background-color: rgba(255, 255, 255, 0.4);
+.bg-tint-light{
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-blend-mode: overlay;
+}
+
+.bg-tint-dark{
+  background-color: rgba(0, 0, 0, 0.6) !important;
   background-blend-mode: overlay;
 }
 
 .bubble-box{
-  border: 1px solid $primary;
+  border: 1px solid $body-bg;
   border-radius: 10%/40%;
+}
+
+.hover-cursor-pointer:hover{
+  cursor: pointer !important;
 }
 
 @import "bootstrap";

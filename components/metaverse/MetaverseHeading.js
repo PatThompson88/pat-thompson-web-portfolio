@@ -12,10 +12,10 @@ import {
 export default function MetaverseHeading() {
   return (
     <MDBContainer
-      className='p-5 text-center bg-image bg-light-tint'
+      className='p-5 text-center bg-image bg-tint-light'
       fluid={true}
       style={{ 
-        backgroundImage: `url(${getBaseUrl()}'/background-images/revelstoke-sun-over-peak.jpg')`,
+        backgroundImage: `url(${getBaseUrl()}'/background-images/peru-sacsayhuaman-tall-wall.jpg')`,
       }}
     >
       <MDBRow className='d-flex justify-content-center align-items-center h-100'>

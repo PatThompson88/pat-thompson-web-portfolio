@@ -2,7 +2,6 @@ import Link from 'next/link';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Header from "/components/shared/Header";
 import SectionSeperator from "components/shared/SectionSeperator";
-import MetaverseHeading from "components/metaverse/MetaverseHeading";
 import { 
   MDBBtn,
   MDBContainer, 
@@ -21,7 +20,7 @@ export default function Metaverse() {
         fluid={true}
       >
         <MDBRow 
-          className='d-flex justify-content-center align-items-center h-100 bubble-box bg-image bg-light-tint'
+          className='d-flex justify-content-center align-items-center h-100 bubble-box bg-image bg-tint-light'
           style={{ 
             backgroundImage: `url(${getBaseUrl()}'/background-images/peru-sacsayhuaman-tall-wall.jpg')`,
           }}
@@ -32,7 +31,7 @@ export default function Metaverse() {
             <h5>A fully interactive vurtual world created using Unity3D</h5>
             <h5>Interact with other members</h5>
             <h5>Explore the world and interact with the environment</h5>
-            <h5>Spend money on it, it'll be fun</h5>
+            <h5>Throw money at it, it'll be fun :D</h5>
             <Link href=''>
               <MDBBtn color='success'>Donate to Project</MDBBtn>
             </Link>

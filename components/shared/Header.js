@@ -50,7 +50,7 @@ export default function Header() {
             <MDBNavbarNav>
               {getMDBNavbarItem("metaverse", "Metaverse")}
               {getMDBNavbarItem("projects", "Projects")}
-              {getMDBNavbarItem("articles", "Articles")}
+              {getMDBNavbarItem("articlesearch", "Articles")}
               {getMDBNavbarItem("employers", "Employers")}
             </MDBNavbarNav>
           </MDBCollapse>
