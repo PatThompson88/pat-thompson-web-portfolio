@@ -20,7 +20,6 @@ export default function ArticleSearch() {
   return (
     <main className="">
       <Header/>
-
       <MDBContainer
         className='mt-5 text-start'
         fluid={false}
@@ -33,13 +32,11 @@ export default function ArticleSearch() {
         >
           <MDBCol size='9' className='text-white py-5'>
             <h1>Articles</h1>
-            <h3>I write about things</h3>
+            <h3>I write about all kinds of things</h3>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-
       <SectionSeperator />
-
       <MDBContainer
         className='text-center'
         fluid={true}
@@ -61,7 +58,7 @@ export default function ArticleSearch() {
           <MDBCol md='8'>
             <MDBRow>
               <MDBCol md='12'>
-                <MDBCard alignment='start'>
+                <MDBCard alignment='start' style={{ maxWidth: '22rem' }}>
                   <MDBCardHeader><MDBCardTitle>Article Title</MDBCardTitle></MDBCardHeader>
                   <MDBCardBody>
                     <MDBCardText>Brief description about the article</MDBCardText>
