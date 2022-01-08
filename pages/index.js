@@ -5,6 +5,7 @@ import MetaverseHeading from "/components/metaverse/MetaverseHeading";
 import SectionSeperator from "components/shared/SectionSeperator";
 import ProjectsHeading from "/components/projects/ProjectsHeading";
 import ArticlesHeading from 'components/articlesearch/ArticlesHeading';
+import Footer from 'components/shared/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionSeperator />
       <ArticlesHeading />
       <SectionSeperator />
+      <Footer/>
     </main>
   );
 }
