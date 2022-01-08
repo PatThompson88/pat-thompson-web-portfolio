@@ -48,10 +48,10 @@ export default function Header() {
           </MDBNavbarToggler>
           <MDBCollapse navbar show={showNav}>
             <MDBNavbarNav>
+              {getMDBNavbarItem("employers", "Employers")}
               {getMDBNavbarItem("metaverse", "Metaverse")}
               {getMDBNavbarItem("projects", "Projects")}
               {getMDBNavbarItem("articlesearch", "Articles")}
-              {getMDBNavbarItem("employers", "Employers")}
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>

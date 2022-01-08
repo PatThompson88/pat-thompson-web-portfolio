@@ -20,7 +20,6 @@ export default function Projects() {
   return (
     <main className="">
       <Header/>
-
       <MDBContainer
         className='mt-5 text-start'
         fluid={false}
@@ -28,7 +27,7 @@ export default function Projects() {
         <MDBRow 
           className='d-flex justify-content-center align-items-center h-100 bubble-box bg-image bg-tint-dark'
           style={{ 
-            backgroundImage: `url(${getBaseUrl()}'/background-images/peru-sacsayhuaman-tall-wall.jpg')`,
+            backgroundImage: `url(${getBaseUrl()}'/background-images/peru-ollantaytambo-short-segment.jpg')`,
           }}
         >
           <MDBCol size='9' className='text-white py-5'>
@@ -38,9 +37,7 @@ export default function Projects() {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-
       <SectionSeperator />
-
       <MDBContainer
         className='text-center'
         fluid={true}
@@ -58,7 +55,6 @@ export default function Projects() {
               </MDBRow>
             </form>
           </MDBCol>
-
           <MDBCol md='8'>
             <MDBRow className='d-flex justify-content-center'>
               <Link className='' href='/projects'>
@@ -79,7 +75,6 @@ export default function Projects() {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-
       <SectionSeperator />
       
     </main>
