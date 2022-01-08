@@ -22,7 +22,7 @@ export default function Metaverse() {
         <MDBRow 
           className='d-flex justify-content-center align-items-center h-100 bubble-box bg-image bg-tint-dark'
           style={{ 
-            backgroundImage: `url(${getBaseUrl()}'/background-images/peru-sacsayhuaman-tall-wall.jpg')`,
+            backgroundImage: `url(${getBaseUrl()}'/background-images/peru-moray-wide-shot.jpg')`,
           }}
         >
           <MDBCol size='9' className='text-white py-5'>

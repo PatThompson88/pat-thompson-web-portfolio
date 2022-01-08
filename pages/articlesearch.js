@@ -58,7 +58,7 @@ export default function ArticleSearch() {
           <MDBCol md='8'>
             <MDBRow>
               <MDBCol md='12'>
-                <MDBCard alignment='start' style={{ maxWidth: '22rem' }}>
+                <MDBCard alignment='start'>
                   <MDBCardHeader><MDBCardTitle>Article Title</MDBCardTitle></MDBCardHeader>
                   <MDBCardBody>
                     <MDBCardText>Brief description about the article</MDBCardText>
